@@ -1,0 +1,108 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site title
+title: "Data Insights &amp; Cloud"
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description: "A blog about Big Data, Data Science and the Cloud"
+
+# Tagline near the site title
+tagline: "A blog about Big Data, Data Science and the Cloud"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl:
+
+sass:
+  sass_dir: _sass
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "https://datainsights.cloud"
+
+# Site navigation - each item must have a title and a url.
+navigation:
+- text: Home
+  url: /
+- text: About
+  url: /about/
+- text: Archives
+  url: /tags/
+
+# The shortname for your Disqus site to enable comments.
+disqus:
+
+# Author information - author info at the bottom of the post
+author_name: "Sascha Dittmann"
+author_bio: "Sascha Dittmann is working as a Data Solution Architect at Microsoft. In his role he supports customers to implement successful cloud solutions. His focus is on software development for Microsoft Azure, SQL Server Business Intelligence, Big Data as well as Data Science."
+author_url:  "https://www.sascha-dittmann.de"
+author_location: "Winterborn, Germany"
+author_image: /images/saschadittmann.jpg
+
+# Sidebar Add banner
+banner_url:
+banner_image:
+
+# Sidebar newsletter widget - add your form action url for MailChimp signup form here
+# mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+mailchimp_url: 
+
+# Social links in the site footer
+twitter_username: "SaschaDittmann"
+facebook_username: "DataDrivenDev"
+googleplus_username: "+SaschaDittmann"
+github_username: "SaschaDittmann"
+codepen_username:
+dribbble_uername:
+medium_username:
+instagram_username:
+pinterest_username: "SaschaDittmann"
+linkedin_username: "saschadittmann"
+weibo_username:
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: '/blog/page:num/'
+plugins: [jekyll-paginate,jekyll-seo-tag,jekyll-sitemap]
+
+permalink: pretty
+markdown: kramdown
+kramdown:
+    auto_ids: false
+
+timezone: "Europe/Berlin"
+encoding: "utf-8"
+# destination: ../DataInsightsGen
+exclude: ["Gemfile", "Gemfile.lock", "node_modules"]
+keep_files: [".git"]
+
+# SEO
+author:
+    picture: /images/saschadittmann.jpg
+    twitter: SaschaDittmann
+twitter:
+    username: SaschaDittmann
+    card: summary
+facebook:
+#    app_id: 1234
+    publisher: 1744648162494420
+    admins: 1626421063
+social:
+    name: Sascha Dittmann
+    links:
+      - https://twitter.com/SaschaDittmann
+      - https://www.facebook.com/DataDrivenDev
+      - https://www.linkedin.com/in/SaschaDittmann
+      - https://plus.google.com/+SaschaDittmann
+      - https://github.com/SaschaDittmann
+      - https://keybase.io/SaschaDittmann
+webmaster_verifications:
+    google: i8bxrMymW8FLymqvV-e79PrIJq85u1kYFUPUHzzn4y0
+    bing: 2CEB7E23B9FDBA8DC9814185822B3844
+#    alexa: 1234
+#    yandex: 1234
+#    baidu: 1234
+# Google Analytics UA-16762357-7
