@@ -1,0 +1,23 @@
+{
+  "name": "datainsightsblog",
+  "description": "",
+  "version": "0.0.1",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "author": "Sascha Dittmann",
+  "homepage": "https://datainsights.cloud",
+  "dependencies": {
+    "bower": "*",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*",
+    "node-bourbon": "*"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

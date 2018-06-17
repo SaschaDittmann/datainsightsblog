@@ -30,4 +30,7 @@
         });
     });
 
+    var fonts = 'https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic';
+    if (document.createStyleSheet) document.createStyleSheet(fonts);
+    else $("head").append($("<link rel='stylesheet' href='"+ fonts +"' type='text/css' media='screen' />"));
 }(jQuery));
