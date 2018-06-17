@@ -31,7 +31,7 @@ gulp.task('css', function() {
         .pipe(sass({ includePaths: require('node-bourbon').includePaths }))
         .pipe(concat('styles.css'))
         .pipe(minify({keepBreaks:true}))
-        .pipe(gulp.dest('assets'));
+        .pipe(gulp.dest('_includes'));
 });
 
 // Prepares JS & CSS assets
