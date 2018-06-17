@@ -76,7 +76,7 @@ kramdown:
 timezone: "Europe/Berlin"
 encoding: "utf-8"
 # destination: ../DataInsightsGen
-exclude: ["Gemfile", "Gemfile.lock", "node_modules", "package.json", "package-lock.json", "bower.json"]
+exclude: ["Gemfile", "Gemfile.lock", "node_modules", "package.json", "package-lock.json", "gulpfile.js", "bower.json"]
 keep_files: [".git"]
 
 # SEO
