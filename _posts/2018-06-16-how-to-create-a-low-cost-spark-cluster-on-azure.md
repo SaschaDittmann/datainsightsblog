@@ -128,7 +128,7 @@ Finally we're ready to provision our first Apache Spark cluster using the AZTK.
 
 {% highlight bash %}
 
-aztk spark cluster create --id mycluster --size 0 --size-low-pri 2 --vm-size standard_d12_v2
+aztk spark cluster create --id mycluster --size 0 --size-low-priority 5 --vm-size standard_d12_v2
 
 {% endhighlight %}
 
