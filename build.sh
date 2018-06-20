@@ -1,3 +1,3 @@
 #!/bin/bash
 gulp
-jekyll build
+bundle exec jekyll build
