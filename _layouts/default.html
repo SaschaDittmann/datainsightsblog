@@ -19,10 +19,7 @@
     {% seo %}
     <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Feed" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-    <!-- CSS -->
-    <style>
-    {% include styles.css %}
-    </style>
+    <link rel='stylesheet' href="{{ "/assets/styles.css" | prepend: site.baseurl }}" type='text/css' media='screen' />
 </head>
 <body>
     <nav id="top" class="site-navigation">
