@@ -35,6 +35,9 @@ navigation:
 # The shortname for your Disqus site to enable comments.
 disqus:
 
+# The GitHub repo for utterances to enable comments.
+utterances: SaschaDittmann/datainsightsblog
+
 # Author information - author info at the bottom of the post
 author_name: "Sascha Dittmann"
 author_bio: "Sascha Dittmann is working as a Data Solution Architect at Microsoft. In his role he supports customers to implement successful cloud solutions. His focus is on software development for Microsoft Azure, SQL Server Business Intelligence, Big Data as well as Data Science."
