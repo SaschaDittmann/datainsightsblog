@@ -1,4 +1,9 @@
 #!/bin/bash
 gulp
-bundle exec jekyll serve --watch
-
+docker run -it \
+  --mount type=bind,source="$(pwd)"/,target=/srv/jekyll \
+  -p 4000:4000 \
+  --name jekyll-builder \
+  --rm \
+  -t jekyll/builder:latest \
+  jekyll serve --watch
