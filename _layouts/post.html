@@ -76,6 +76,9 @@ layout: default
             {% if site.disqus %}
                 {% include disqus.html %}
             {% endif %}
+            {% if site.utterances %}
+                {% include utterances.html %}
+            {% endif %}
         </main><!-- .site-main -->
         {% include sidebar.html %}
     </div><!-- .inner -->
