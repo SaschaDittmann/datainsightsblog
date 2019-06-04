@@ -40,7 +40,7 @@ utterances: SaschaDittmann/datainsightsblog
 
 # Author information - author info at the bottom of the post
 author_name: "Sascha Dittmann"
-author_bio: "Sascha Dittmann is working as a Data Solution Architect at Microsoft. In his role he supports customers to implement successful cloud solutions. His focus is on software development for Microsoft Azure, SQL Server Business Intelligence, Big Data as well as Data Science."
+author_bio: "Sascha Dittmann is working as a Technical Evangelist at Microsoft. In his role he supports developers to implement successful cloud solutions. His focus is on Microsoft Azure, SQL Server, Big Data as well as Data Science."
 author_url:  "https://www.sascha-dittmann.de"
 author_location: "Winterborn, Germany"
 author_image: /images/saschadittmann.jpg
@@ -56,7 +56,7 @@ mailchimp_url:
 # Social links in the site footer
 twitter_username: "SaschaDittmann"
 facebook_username: "DataDrivenDev"
-googleplus_username: "+SaschaDittmann"
+googleplus_username:
 github_username: "SaschaDittmann"
 codepen_username:
 dribbble_uername:
