@@ -4,7 +4,7 @@ permalink: /recommended/books.html
 banner_image: 404.jpg
 ---
 
-## Book I enjoyed reading
+## Books I enjoyed reading
 
 ### Machine Learning
 
