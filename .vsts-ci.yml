@@ -7,6 +7,9 @@ trigger:
 # no PR triggers
 pr: none
 
+pool:
+  vmImage: 'Ubuntu-16.04'
+
 steps:
 - task: Docker@0
   displayName: Run Jekyll
