@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  deploy-to-azure:
+  build:
     runs-on: ubuntu-latest
     container: 
       image: jekyll/builder:latest
@@ -15,7 +15,13 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-
+    - name: Build
+      run: |
+        ls -la /srv/jekyll
+        # jekyll build --future
+  deploy-to-azure:
+    runs-on: ubuntu-latest
+    steps:
     - name: Azure Login
       uses: azure/login@v1
       with:
@@ -29,5 +35,4 @@ jobs:
         azcliversion: latest
         inlineScript: |
           ls -la $GITHUB_WORKSPACE
-          ls -la /srv/jekyll
           # az storage blob sync -s $GITHUB_WORKSPACE/_site -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
