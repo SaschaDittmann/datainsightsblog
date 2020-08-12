@@ -11,7 +11,7 @@ jobs:
     container: 
       image: jekyll/builder:latest
       volumes:
-      - $GITHUB_WORKSPACE:/srv/jekyll
+      - /home/runner/work:/srv/jekyll
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -29,3 +29,4 @@ jobs:
         azcliversion: latest
         inlineScript: |
           ls -la $GITHUB_WORKSPACE
+          ls -la /srv/jekyll
