@@ -18,10 +18,19 @@ jobs:
     - name: Build
       run: |
         jekyll build --future
+    - name: Store Website
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-site
+        path: /srv/jekyll/_site/
   deploy-to-azure:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - name: Get Website
+      uses: actions/download-artifact@v2
+      with:
+        name: my-site
     - name: Azure Login
       uses: azure/login@v1
       with:
@@ -34,7 +43,5 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          echo $GITHUB_WORKSPACE
-          ls -la $GITHUB_WORKSPACE
-          ls -la /github
+          ls -la my-site
           # az storage blob sync -s $GITHUB_WORKSPACE/_site -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
