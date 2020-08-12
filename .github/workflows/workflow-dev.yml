@@ -29,6 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get Website
+      id: download
       uses: actions/download-artifact@v2
       with:
         name: my-site
@@ -46,4 +47,4 @@ jobs:
         inlineScript: |
           echo $SOURCE_PATH
           ls -la $SOURCE_PATH
-          az storage blob sync -s $SOURCE_PATH -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
+          az storage blob sync -s . -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
