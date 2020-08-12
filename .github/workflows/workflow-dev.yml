@@ -1,0 +1,31 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:    
+      - dev
+
+jobs:
+  deploy-to-azure:
+    runs-on: ubuntu-latest
+    container: 
+      image: jekyll/builder:latest
+      volumes:
+      - $GITHUB_WORKSPACE:/srv/jekyll
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Azure CLI - Upload Files
+      uses: azure/CLI@v1
+      env:
+        STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+      with:
+        azcliversion: latest
+        inlineScript: |
+          ls -la $GITHUB_WORKSPACE
