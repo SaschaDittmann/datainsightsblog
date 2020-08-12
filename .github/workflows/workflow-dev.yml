@@ -22,7 +22,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: my-site
-        path: /srv/jekyll/_site/
+        path: _site/
   deploy-to-azure:
     needs: build
     runs-on: ubuntu-latest
