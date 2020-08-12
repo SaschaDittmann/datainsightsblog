@@ -2,7 +2,7 @@
 layout: post
 title:  "How to create a low-cost Apache Spark cluster on Microsoft Azure"
 date: 2018-06-16T12:18:17+02:00
-banner_image: AztkGettingStarted00.png
+image: /images/posts/AztkGettingStarted00.png
 tags: [big data, microsoft azure, apache spark, azure batch]
 ---
 

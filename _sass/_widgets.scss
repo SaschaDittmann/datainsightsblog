@@ -1,0 +1,127 @@
+/**
+ * 7. Widgets
+ */
+.widget {
+    border-top: 2px solid rgba($gray,.15);
+    margin-bottom: 2.5em;
+    padding-top: 1.875em;
+
+    &:first-child {
+        border-top: 0;
+        padding-top: 0;
+    }
+}
+
+.widget-title {
+    color: $gray-light;
+    font-size: 0.875em;
+    letter-spacing: 1px;
+    margin: 0 0 1.71428em;
+    text-transform: uppercase;
+}
+
+.widget {
+    label {
+        color: $gray;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="search"],
+    input[type="url"],
+    select,
+    textarea {
+        border: 0;
+        font-size: 14px;
+    }
+
+    button,
+    input[type="submit"],
+    input[type="button"],
+    input[type="reset"],
+    .button {
+        padding: 0.9em 2em;
+    }
+}
+
+.widget-newsletter {
+    .button {
+        margin-top: 1.25em;
+    }
+}
+
+.widget-recent-posts {
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.75em;
+    }
+
+    a {
+        color: #fff;
+        display: inline-block;
+        line-height: 1.3;
+        margin: 0 0 0.25em;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    span {
+        color: $gray;
+        display: block;
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        text-transform: uppercase;
+    }
+}
+
+.widget-tags {
+    a {
+        background-color: rgba($gray,.15);
+        color: $gray-light;
+        display: inline-block;
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin: 0 0.6em 0.6em 0;
+        padding: 0.6em 0.8em;
+        text-decoration: none;
+        text-transform: uppercase;
+        -webkit-transition: .3s;
+        transition: .3s;
+
+        &:hover {
+            background-color: $accent;
+            color: #fff;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .widget {
+        text-align: center;
+
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 480px;
+        }
+    }
+
+    .widget-title {
+        &.line-accent {
+            &:after {
+                content: "\00a0\2014";
+            }
+        }
+    }
+}

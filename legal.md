@@ -3,7 +3,8 @@ layout: page
 title: Legal Notice
 description: Sascha blogs about Big Data, Data Science and the Cloud
 permalink: /legal.html
-banner_image: legalPage.jpg
+image: legalPage.jpg
+sitemap: false
 ---
 
 Information in accordance with § 5 TMG

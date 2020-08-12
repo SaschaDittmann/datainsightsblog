@@ -1,0 +1,17 @@
+<header class="site-header outer">
+    <div class="inner">
+        <div class="site-header-inside">
+
+            {% if page.url == "/" %}
+            <h1 class="site-title"><a href="{{ site.baseurl }}/">{{site.title}}</a></h1>
+            {% else %}
+            <p class="site-title"><a href="{{ site.baseurl }}/">{{site.title}}</a></p>
+            {% endif %}
+
+            {% if site.tagline %}
+            <p class="site-description">{{site.tagline}}</p>
+            {% endif %}
+
+        </div><!-- .site-header-inside -->
+    </div><!-- .inner -->
+</header><!-- .site-header -->

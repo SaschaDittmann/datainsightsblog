@@ -1,0 +1,359 @@
+/**
+ * 5. Content
+ * 5.1 Posts and Pages
+ */
+.post {
+    background-color: #fff;
+    margin-bottom: 3.33333em;
+    padding-bottom: 2.22222em;
+
+    &.post-full {
+        margin-bottom: 1.11111em;
+    }
+}
+
+.post-header {
+    margin-bottom: 2.22222em;
+}
+
+.post-thumbnail {
+    display: block;
+
+    img {
+        width: 100%;
+    }
+}
+
+.post-title {
+    font-size: 2em;
+    margin: 0 0 0.66667em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.post-header-wrap {
+    overflow: hidden;
+    position: relative;
+
+    .post-title {
+        background-color: $accent;
+        clear: both;
+        color: #fff;
+        float: left;
+        margin: 1.66667em 0 0;
+        max-width: 75%;
+        padding-bottom: 0.83333em;
+        padding-top: 0.83333em;
+    }
+
+    .post-thumbnail + .post-title {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+}
+
+.post-meta {
+    background-color: $accent-alt;
+    clear: both;
+    color: #fff;
+    font-size: 12px;
+    float: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-bottom: 1.25em;
+    padding-top: 1.25em;
+    text-transform: uppercase;
+  
+    a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
+
+.read-more {
+    margin-top: 2.22222em;
+
+    .button {
+        padding: 0.75em 15px;
+    }
+}
+
+.post-footer {
+    margin-top: 1.66667em;
+}
+
+.post-share,
+.post-tags {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-size: 11px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+  a {
+        margin: 0.25em 5px 0.25em 0;
+
+        &:first-of-type {
+            margin-left: 8px;
+        }
+    }
+}
+
+.post-share {
+    margin-bottom: 2.72727em;
+
+    .button {
+        height: 2.57143em;
+        line-height: 2.57143em;
+        width: 2.57143em;
+    }
+}
+
+.post-tags {
+    border-top: 2px solid rgba($gray-light,.3);
+    padding-top: 2.72727em;
+
+    a {
+        background-color: rgba($gray-light,.3);
+        color: $gray;
+        padding: 0.27273em 0.90909em;
+        text-decoration: none;
+        -webkit-transition: .3s;
+        transition: .3s;
+
+        &:hover {
+            background-color: $accent;
+            color: #fff;
+        }
+    }
+}
+
+/* Author box */
+.author-box {
+    background-color: #fff;
+    margin-bottom: 1.11111em;
+    padding-bottom: 2.22222em;
+    padding-top: 2.22222em;
+
+    &:last-child {
+        margin-bottom: 3.33333em;
+    }
+}
+
+.author-avatar {
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 85px;
+    margin: 0 0 1.25em;
+    width: 85px;
+}
+
+.author-title {
+    font-size: 0.88889em;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.author-bio {
+    font-size: 0.88889em;
+    line-height: 1.5;
+    margin: 0.75em 0 0;
+}
+
+.author-links {
+    color: $gray-light;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 1.5em 0 0;
+    text-transform: uppercase;
+}
+
+.author-location,
+.author-website {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 10px;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+
+    svg {
+        display: inline-block;
+        fill: currentColor;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        height: 1em;
+        line-height: 1;
+        margin-right: 3px;
+    }
+}
+
+/* Tags archive */
+.archive-tag-list {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 1.33333em;
+
+  a {
+        font-size: 12px;
+        margin: 0 8px 0.66667em 0;
+    }
+}
+
+.archive-tag-list a,
+.archive-top-link {
+    background-color: rgba($gray-light,.3);
+    color: $gray;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 0.33333em 0.83333em;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+
+    &:hover {
+        background-color: $accent;
+        color: #fff;
+    }
+}
+
+.archive-top-link {
+    font-size: 11px;
+}
+
+.archive-post-list {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+        margin-bottom: 0.33333em;
+    }
+}
+
+.archive-post-title {
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+}
+
+.archive-post-meta {
+    color: $gray;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+@media (min-width: 481px) {
+    .author-info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .author-avatar {
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        margin: 0 30px 0 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .post {
+        margin-bottom: 3vw;
+    }
+
+    .post.post-full,
+    .author-box {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .post-title {
+        font-size: 1.77778em;
+    }
+
+    .post-header-wrap {
+        .post-title {
+            padding-bottom: 0.75em;
+            padding-top: 0.75em;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .post-title {
+        font-size: 1.75em;
+    }
+
+    .post-header-wrap {
+        .post-title {
+            padding-bottom: 0.53571em;
+            padding-top: 0.53571em;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-header {
+      margin-bottom: 1.33333em;
+    }
+
+    .post-header-wrap {
+        .post-title {
+            font-size: 1.25em;
+            margin-top: 1.5em;
+            max-width: none;
+            padding-bottom: 0.5em;
+            padding-top: 0.5em;
+        }
+    }
+
+    .post-meta {
+        font-size: 11px;
+        padding-bottom: 0.90909em;
+        padding-top: 0.90909em;
+    }
+}

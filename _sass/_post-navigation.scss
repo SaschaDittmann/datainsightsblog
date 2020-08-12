@@ -1,0 +1,124 @@
+/**
+ * 5.4 Post Navigation
+ */
+.post-navigation {
+    margin-bottom: 2.22222em;
+    margin-top: 2.22222em;
+}
+
+.nav-next,
+.nav-previous {
+    background-color: rgba($gray,.15);
+    border-left: 3px solid $accent;
+    margin-bottom: 1.11111em;
+    padding-bottom: 2.5em;
+    padding-top: 1.66667em;
+    position: relative;
+}
+
+.nav-thumb {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 260px;
+}
+
+.nav-title {
+    color: #fff;
+    font-size: 1.11111em;
+    margin: 0 250px 0.25em 0;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: $accent;
+        }
+    }
+}
+
+.nav-before,
+.nav-date {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right: 250px;
+    text-transform: uppercase;
+}
+
+.nav-before {
+    color: $gray-light;
+    margin-bottom: 1.25em;
+}
+
+@media only screen and (min-width: 961px) {
+    .post-navigation {
+        &:last-child {
+            margin-bottom: 3.33333em;
+        }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .post-navigation {
+        margin-bottom: 3vw;
+        margin-top: 0;
+    }
+
+    .nav-next,
+    .nav-previous {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .nav-next,
+    .nav-previous {
+        padding-bottom: 1.875em;
+        padding-top: 1.25em;
+    }
+
+    .nav-thumb {
+        width: 200px;
+    }
+
+    .nav-title,
+    .nav-before,
+    .nav-date {
+        margin-right: 200px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post-navigation {
+        margin-bottom: 15px;
+    }
+
+    .nav-next,
+    .nav-previous {
+        padding-bottom: 1.125em;
+        padding-top: 0.9375em;
+    }
+
+    .nav-thumb {
+        width: 120px;
+    }
+
+    .nav-title {
+        font-size: 1em;
+        margin-right: 120px;
+    }
+
+    .nav-before {
+        margin-bottom: 1em;
+    }
+
+    .nav-before,
+    .nav-date {
+        font-size: 11px;
+        margin-right: 120px;
+    }
+}
