@@ -2,7 +2,7 @@
 layout: post
 title:  "Configuring an Azure VNET to use AZTK in mixed mode"
 date: 2018-06-20T13:31:32+02:00
-banner_image: AztkMixedMode00.png
+image: /images/posts/AztkMixedMode00.png
 tags: [big data, microsoft azure, apache spark, azure batch]
 published: true
 ---

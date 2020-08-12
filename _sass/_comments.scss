@@ -1,0 +1,32 @@
+/**
+ * 5.2. Comments
+ */
+.comments-area {
+    background-color: #fff;
+    margin-bottom: 3.33333em;
+    margin-top: 2.22222em;
+    padding-bottom: 3.33333em;
+    padding-top: 2.22222em;
+}
+
+.comments-title {
+    border-bottom: 2px solid rgba($gray-light,.3);
+    font-size: 1.11111em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1.5em;
+    margin: 0 0 2em;
+}
+
+@media only screen and (max-width: 960px) {
+    .comments-area {
+        margin-bottom: 3vw;
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .comments-area {
+        margin-bottom: 15px;
+    }
+}

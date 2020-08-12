@@ -2,7 +2,7 @@
 layout: page
 title: About the author
 description: Sascha blogs about Big Data, Data Science and the Cloud
-banner_image: aboutPage.jpg
+image: aboutPage.jpg
 ---
 
 **Sascha Dittmann** is working as a Cloud Solution Architect at Microsoft since 2015.

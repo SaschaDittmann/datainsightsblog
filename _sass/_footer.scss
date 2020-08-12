@@ -1,0 +1,84 @@
+/**
+ * 6. Site Footer
+ */
+.site-footer {
+    background-color: $gray-dark;
+
+    .inner {
+        position: relative;
+    }
+}
+
+.social-links {
+    border-bottom: 2px solid rgba($gray,.15);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 2.66667em 0;
+
+    .button {
+        color: $gray-light;
+        margin: 0 2px 4px;
+    }
+}
+
+.site-info {
+    padding-bottom: 2.22222em;
+    padding-top: 2.22222em;
+    text-align: center;
+
+    .button {
+        color: $gray-light;
+        margin-top: 2.14285em;
+    }
+}
+
+.copyright {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    .social-links {
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding: 3.33333em 65px 3.33333em 0;
+
+        .button {
+            margin-left: 0;
+            margin-right: 4px;
+        }
+    }
+
+    .site-info {
+        padding-bottom: 3.33333em;
+        text-align: left;
+
+        .top-link {
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 3.33333rem;
+        }
+
+        &:only-child {
+            padding-right: 65px;
+
+            .top-link {
+                top: 2.22222rem;
+            }
+        }
+    }
+}

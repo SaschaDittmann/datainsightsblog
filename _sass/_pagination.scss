@@ -1,0 +1,44 @@
+/**
+ * 5.3 Pagination
+ */
+.pagination {
+    background-color: $gray-dark;
+    color: $gray;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 3.33333em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+
+    .page-number {
+        display: block;
+        padding: 1.25em 55px;
+    }
+
+    .newer-posts,
+    .older-posts {
+        position: absolute;
+        top: 0;
+    }
+
+    .newer-posts {
+        left: 0;
+    }
+
+    .older-posts {
+        right: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .pagination {
+        margin-bottom: 3vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pagination {
+        margin-bottom: 15px;
+    }
+}

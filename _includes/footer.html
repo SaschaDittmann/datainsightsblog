@@ -1,45 +1,57 @@
-<footer class="site-footer">
+<footer class="site-footer outer">
     <div class="inner">
         <div class="social-links">
-            {% if site.twitter_username %}
-            <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="fa-twitter square fill-horizontal"><span class="screen-reader-text">Twitter</span></a>
+            {% if site.twitter_url %}
+            <a href="{{ site.twitter_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Twitter</span>{% include icons/twitter.html %}</a>
             {% endif %}
-            {% if site.facebook_username %}
-            <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username }}" class="fa-facebook square fill-horizontal"><span class="screen-reader-text">Facebook</span></a>
+            {% if site.facebook_url %}
+            <a href="{{ site.facebook_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Facebook</span>{% include icons/facebook.html %}</a>
             {% endif %}
-            {% if site.googleplus_username %}
-            <a target="_blank" href="https://plus.google.com/{{ site.googleplus_username }}" class="fa-google-plus square fill-horizontal"><span class="screen-reader-text">Google+</span></a>
+            {% if site.github_url %}
+            <a href="{{ site.github_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">GitHub</span>{% include icons/github.html %}</a>
             {% endif %}
-            {% if site.github_username %}
-            <a target="_blank" href="https://github.com/{{ site.github_username }}" class="fa-github-alt square fill-horizontal"><span class="screen-reader-text">GitHub</span></a>
+            {% if site.codepen_url %}
+            <a href="{{ site.codepen_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">CodePen</span>{% include icons/codepen.html %}</a>
             {% endif %}
-            {% if site.codepen_username %}
-            <a target="_blank" href="http://codepen.io/{{ site.codepen_username }}" class="fa-codepen square fill-horizontal"><span class="screen-reader-text">CodePen</span></a>
+            {% if site.dribbble_url %}
+            <a href="{{ site.dribbble_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Dribbble</span>{% include icons/dribbble.html %}</a>
             {% endif %}
-            {% if site.dribbble_uername %}
-            <a target="_blank" href="https://dribbble.com/{{ site.dribbble_uername }}" class="fa-dribbble square fill-horizontal"><span class="screen-reader-text">Dribbble</span></a>
+            {% if site.medium_url %}
+            <a href="{{ site.medium_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Medium</span>{% include icons/medium.html %}</a>
             {% endif %}
-            {% if site.medium_username %}
-            <a target="_blank" href="https://medium.com/{{ site.medium_username }}" class="fa-medium square fill-horizontal"><span class="screen-reader-text">Medium</span></a>
+            {% if site.instagram_url %}
+            <a href="{{ site.instagram_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Instagram</span>{% include icons/instagram.html %}</a>
             {% endif %}
-            {% if site.instagram_username %}
-            <a target="_blank" href="http://instagram.com/{{ site.instagram_username }}" class="fa-instagram square fill-horizontal"><span class="screen-reader-text">Instagram</span></a>
+            {% if site.pinterest_url %}
+            <a href="{{ site.pinterest_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Pinterest</span>{% include icons/pinterest.html %}</a>
             {% endif %}
-            {% if site.pinterest_username %}
-            <a target="_blank" href="http://www.pinterest.com/{{ site.pinterest_username }}" class="fa-pinterest-p square fill-horizontal"><span class="screen-reader-text">Pinterest</span></a>
+            {% if site.linkedin_url %}
+            <a href="{{ site.linkedin_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">LinkedIn</span>{% include icons/linkedin.html %}</a>
             {% endif %}
-            {% if site.linkedin_username %}
-            <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="fa-linkedin square fill-horizontal"><span class="screen-reader-text">LinkedIn</span></a>
+            {% if site.weibo_url %}
+            <a href="{{ site.weibo_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Weibo</span>{% include icons/weibo.html %}</a>
             {% endif %}
-            {% if site.weibo_username %}
-            <a target="_blank" href="http://weibo.com/{{ site.weibo_username }}" class="fa-weibo square fill-horizontal"><span class="screen-reader-text">Weibo</span></a>
-            {% endif %}
-            <a class="fa-feed square fill-horizontal" href="{{ site.baseurl }}/feed.xml"><span class="screen-reader-text">RSS</span></a>
+            <a href="{{ site.baseurl }}/feed.xml" class="button button-icon button-fill-horz"><span
+                    class="screen-reader-text">RSS</span>{% include icons/rss.html %}</a>
         </div><!-- .social-links -->
         <div class="site-info">
-            &copy; <a href="{{ site.baseurl }}/">{{site.title}}</a> all rights reserved. <br />Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>. BlogInn theme by <a target="_blank" href="http://justgoodthemes.com/">JustGoodThemes</a>
-            <a href="#top" id="top-link" class="fa-chevron-up top-link square fill-horizontal"><span class="screen-reader-text">Back to the top</span></a>
-            <br/><a href="{{site.baseurl}}/legal.html">Legal Notice</a>
+            <div class="copyright">
+                &copy; <a href="{{ site.baseurl }}/">{{site.title}}</a> all rights reserved. <br />Powered by <a
+                href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>. BlogInn theme by <a
+                href="https://justgoodthemes.com/" target="_blank" rel="noopener">JustGoodThemes</a>
+                <br/><a href="{{site.baseurl}}/legal.html" rel="noopener">Legal Notice</a>
+            </div>
+            <a href="#top" id="js-top-link" class="top-link button button-icon button-fill-horz"><span class="screen-reader-text">Back to the top</span>{% include icons/chevron-up.html %}</a>
         </div><!-- .site-info -->
     </div><!-- .inner -->
 </footer><!-- .site-footer -->

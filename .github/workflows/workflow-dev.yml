@@ -1,0 +1,46 @@
+name: Deploy Static Website
+
+on:
+  push:
+    branches:    
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: jekyll/builder:latest
+      volumes:
+      - /github/workspace:/srv/jekyll
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Build
+      run: |
+        jekyll build --future
+    - name: Store Website
+      uses: actions/upload-artifact@v2
+      with:
+        name: my-site
+        path: _site/
+
+  deploy-to-azure:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get Website
+      uses: actions/download-artifact@v2
+      with:
+        name: my-site
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Azure CLI - Upload Files
+      uses: azure/CLI@v1
+      env:
+        STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME_DEV }}
+      with:
+        azcliversion: latest
+        inlineScript: |
+          az storage blob sync -s . -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"

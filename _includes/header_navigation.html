@@ -1,0 +1,36 @@
+<nav id="top" class="site-nav outer" aria-label="Main Menu">
+    <div class="inner">
+        <div class="site-nav-inside">
+
+            <button id="menu-show" class="js-menu-toggle"><span class="icon icon-menu"
+                    aria-hidden="true"></span>Menu</button>
+
+            <div class="menu-panel">
+                <div class="menu-panel-scrollable">
+                    <div class="menu-panel-top">
+                        <button id="menu-hide" class="js-menu-toggle button button-icon button-fill-horz"><span class="icon icon-close" aria-hidden="true"></span><span class="screen-reader-text">Close</span></button>
+                    </div>
+                    <ul class="menu">
+                        {% for link in site.navigation %}
+                        {% assign current = nil %}
+                        {% if page.url == link.url %}
+                        {% assign current = 'current' %}
+                        {% endif %}
+                        <li class="menu-item {{ current }}">
+                            <a href="{{ link.url }}">{{ link.text }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div><!-- .menu-panel -->
+
+            <ul class="actions">
+                <li>
+                    <a class="button button-icon button-fill-horz"
+                        href="{{site.baseurl}}/feed.xml">{% include icons/rss.html %}<span class="screen-reader-text">Subscribe</span></a>
+                </li>
+            </ul><!-- .actions -->
+
+        </div><!-- .site-nav-inside -->
+    </div><!-- .inner -->
+</nav><!-- .site-nav -->

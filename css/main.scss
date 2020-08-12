@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+/**
+ * Table of Contents
+ * 0. Reset
+ * 1. General
+ * 2. Structure
+ * 3. Site Navigation
+ * 4. Site Header
+ * 5. Content
+ *   5.1 Posts and Pages
+ *   5.2 Comments
+ *   5.3 Pagination
+ *   5.4 Post Navigation
+ * 6. Site Footer
+ * 7. Widgets
+ * 8. Animations
+ * 9. Syntax Highlighter
+ */
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import 
+    "variables",
+    "reset",
+    "general",
+    "structure",
+    "header-navigation",
+    "header",
+    "posts-pages",
+    "comments",
+    "pagination",
+    "post-navigation",
+    "footer",
+    "widgets",
+    "animations",
+    "syntax-highlighter"
+;

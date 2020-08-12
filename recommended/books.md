@@ -1,7 +1,8 @@
 ---
 layout: page
 permalink: /recommended/books.html
-banner_image: 404.jpg
+image: 404.jpg
+sitemap: false
 ---
 
 ## Books I enjoyed reading
