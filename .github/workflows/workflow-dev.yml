@@ -39,9 +39,8 @@ jobs:
     - name: Azure CLI - Upload Files
       uses: azure/CLI@v1
       env:
-        STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }}
+        STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME_DEV }}
       with:
         azcliversion: latest
         inlineScript: |
-          ls -la ${{ steps.download.outputs.download-path }}
-          # az storage blob sync -s $GITHUB_WORKSPACE/_site -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
+          az storage blob sync -s ${{ steps.download.outputs.download-path }} -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
