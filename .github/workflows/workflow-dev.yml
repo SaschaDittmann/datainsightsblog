@@ -23,6 +23,7 @@ jobs:
       with:
         name: my-site
         path: _site/
+
   deploy-to-azure:
     needs: build
     runs-on: ubuntu-latest
@@ -35,7 +36,6 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-
     - name: Azure CLI - Upload Files
       uses: azure/CLI@v1
       env:
@@ -43,5 +43,5 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          ls -la my-site
+          ls -la ${{ steps.download.outputs.download-path }}
           # az storage blob sync -s $GITHUB_WORKSPACE/_site -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
