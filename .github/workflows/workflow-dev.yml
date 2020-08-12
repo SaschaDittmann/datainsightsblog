@@ -19,6 +19,7 @@ jobs:
       run: |
         jekyll build --future
   deploy-to-azure:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - name: Azure Login
