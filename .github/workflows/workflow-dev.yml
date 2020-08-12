@@ -13,12 +13,12 @@ jobs:
       volumes:
       - /github/workspace:/srv/jekyll
     steps:
-    - name: Checkout
+    - name: checkout
       uses: actions/checkout@v2
-    - name: Build
+    - name: build
       run: |
         jekyll build --future
-    - name: Store Website
+    - name: store-website
       uses: actions/upload-artifact@v2
       with:
         name: my-site
@@ -28,15 +28,15 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - name: Get Website
+    - name: download
       uses: actions/download-artifact@v2
       with:
         name: my-site
-    - name: Azure Login
+    - name: login
       uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - name: Azure CLI - Upload Files
+    - name: upload
       uses: azure/CLI@v1
       env:
         STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME_DEV }}
