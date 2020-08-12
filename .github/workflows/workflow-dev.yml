@@ -44,4 +44,6 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
+          echo $SOURCE_PATH
+          ls -la $SOURCE_PATH
           az storage blob sync -s $SOURCE_PATH -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
