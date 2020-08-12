@@ -191,4 +191,4 @@ aztk spark cluster delete --id mycluster
 
 To see a demo of how to setup AZTK and provision your first Spark cluster, I created a short video:
 
-<iframe width="500" height="281" src="https://www.youtube.com/embed/Kr62gDdRMyQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="500" height="281" src="https://www.youtube.com/embed/Kr62gDdRMyQ" frameborder="0" allow="autoplay; encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://youtu.be/Kr62gDdRMyQ" target="_blank">How to create a low-cost Spark cluster on Azure</a> on my <a href="https://www.youtube.com/SaschaDittmann" target="_blank">YouTube Channel</a></p>
