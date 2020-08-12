@@ -29,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get Website
-      id: download
       uses: actions/download-artifact@v2
       with:
         name: my-site
@@ -41,10 +40,7 @@ jobs:
       uses: azure/CLI@v1
       env:
         STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME_DEV }}
-        SOURCE_PATH: ${{ steps.download.outputs.download-path }}
       with:
         azcliversion: latest
         inlineScript: |
-          echo $SOURCE_PATH
-          ls -la $SOURCE_PATH
           az storage blob sync -s . -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
