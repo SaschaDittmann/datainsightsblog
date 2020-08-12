@@ -35,4 +35,5 @@ jobs:
         inlineScript: |
           echo $GITHUB_WORKSPACE
           ls -la $GITHUB_WORKSPACE
+          ls -la /github
           # az storage blob sync -s $GITHUB_WORKSPACE/_site -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
