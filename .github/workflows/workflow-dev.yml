@@ -40,7 +40,8 @@ jobs:
       uses: azure/CLI@v1
       env:
         STORAGE_ACCOUNT_NAME: ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME_DEV }}
+        SOURCE_PATH: ${{ steps.download.outputs.download-path }}
       with:
         azcliversion: latest
         inlineScript: |
-          az storage blob sync -s ${{ steps.download.outputs.download-path }} -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
+          az storage blob sync -s $SOURCE_PATH -c '$web' --account-name "$STORAGE_ACCOUNT_NAME"
