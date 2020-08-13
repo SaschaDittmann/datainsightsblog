@@ -7,6 +7,23 @@
     </section><!-- .widget-text -->
     {% endif %}
 
+    {% if site.youtube_channelid or site.twitter_username %}
+    <section class="widget widget-text">
+        <h2 class="widget-title line-accent">Subscribe</h2>
+        {% if site.youtube_channelid %}
+        <p>
+            <script src="https://apis.google.com/js/platform.js"></script>
+            <div class="g-ytsubscribe" data-channelid="{{ site.youtube_channelid }}" data-layout="full" data-theme="dark" data-count="default"></div>
+        </p>
+        {% endif %}
+        {% if site.twitter_username and site.twitter_url %}
+        <p>
+            <a href="{{ site.twitter_url }}?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @{{ site.twitter_username }}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </p>
+        {% endif %}
+    </section>
+    {% endif %}
+    
     {% if site.mailchimp_url %}
     <section class="widget widget-newsletter">
         <h2 class="widget-title line-accent">{{ site.title}} Newsletter</h2>
