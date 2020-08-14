@@ -100,9 +100,9 @@ twitter:
     username: SaschaDittmann
     card: summary
 facebook:
-#    app_id: 1234
-    publisher: https://www.facebook.com/DataDrivenDev
-    admins: DataDrivenDev
+    app_id: 641487336573614
+    publisher: 1744648162494420
+    admins: 1626421063
 social:
     name: Sascha Dittmann
     links:
@@ -117,4 +117,3 @@ webmaster_verifications:
 #    alexa: 1234
 #    yandex: 1234
 #    baidu: 1234
-# Google Analytics UA-16762357-7
