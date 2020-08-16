@@ -51,6 +51,6 @@ jobs:
       with:
         azcliversion: latest
         inlineScript: |
-          az storage blob list -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -o table | grep -e .png -e .jpg | awk '{ print $1 }' | xargs -i az storage blob update -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -n "{}" --content-cache-control 'max-age=2592000'
+          az storage blob list -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -o table | grep -e .png -e .jpg -e .ico | awk '{ print $1 }' | xargs -i az storage blob update -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -n "{}" --content-cache-control 'max-age=2592000'
           az storage blob list -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -o table | grep .css | awk '{ print $1 }' | xargs -i az storage blob update -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -n "{}" --content-cache-control 'max-age=86400'
           az storage blob list -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -o table | grep .js | awk '{ print $1 }' | xargs -i az storage blob update -c '$web' --account-name "$STORAGE_ACCOUNT_NAME" -n "{}" --content-cache-control 'max-age=691200'
