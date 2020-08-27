@@ -120,7 +120,7 @@ chmod 755 account_setup.sh &&
 
 After answering a few questions, the command return the required settings, which you add/update in the **.aztk/secrets.yaml** file.
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted01.png" title="secrets.yaml Settings" caption="Adding the Azure credentials to the secrets.yaml file" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted01.png" title="secrets.yaml Settings" caption="Adding the Azure credentials to the secrets.yaml file" %}
 
 ## Provision your first Apache Spark cluster
 
@@ -137,7 +137,7 @@ aztk spark cluster create --id mycluster --size 0 --size-low-priority 5 --vm-siz
 + The **size-low-priority** parameter specifies the amount of Low-Priority Virtual Machines (which are charged at the 20% of the regualar price). This, of course, comes with a disadvantage. If Azure needs the virtual machines for another customer, they will be deleted.
 + The **vm-size** parameter specifies the [type of the virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes) to use. 
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted02.png" title="Provision Apache Spark Cluster" caption="Provision your first Apache Spark cluster" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted02.png" title="Provision Apache Spark Cluster" caption="Provision your first Apache Spark cluster" %}
 
 >You're also able to use the Azure N-Series virtual machines to provision GPU enabled clusters.
 
@@ -151,7 +151,7 @@ aztk spark cluster list
 
 {% endhighlight %}
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted03.png" title="List Apache Spark Clusters" caption="List all Apache Spark clusters" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted03.png" title="List Apache Spark Clusters" caption="List all Apache Spark clusters" %}
 
 {% highlight bash %}
 
@@ -159,7 +159,7 @@ aztk spark cluster get --id mycluster
 
 {% endhighlight %}
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted04.png" title="Get Cluster Details" caption="Get detailed information about a single cluster" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted04.png" title="Get Cluster Details" caption="Get detailed information about a single cluster" %}
 
 ## Connect to the cluster
 
@@ -171,11 +171,11 @@ aztk spark cluster ssh --id mycluster
 
 {% endhighlight %}
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted05.png" title="Get Cluster Details" caption="Get detailed information about a single cluster" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted05.png" title="Get Cluster Details" caption="Get detailed information about a single cluster" %}
 
 After the connection has been established, you can use the port forwarding to access services like the Spark Web UI.
 
-{% include image_caption.html imageurl="/images/posts/AztkGettingStarted06.png" title="Apache Spark Web UI" caption="Access the Spark Web UI through the port forwarding" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkGettingStarted06.png" title="Apache Spark Web UI" caption="Access the Spark Web UI through the port forwarding" %}
 
 ## Deleting a cluster
 
