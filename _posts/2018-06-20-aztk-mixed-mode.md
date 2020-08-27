@@ -27,7 +27,7 @@ aztk spark cluster create --id mycluster --size 1 --size-low-priority 2 --vm-siz
 
 But all I got, was the following error message:
 
-{% include image_caption.html imageurl="/images/posts/AztkMixedMode01.png" title="You must configure a VNET to use AZTK in mixed mode (dedicated and low priority nodes)" caption="You must configure a VNET to use AZTK in mixed mode (dedicated and low priority nodes)" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkMixedMode01.png" title="You must configure a VNET to use AZTK in mixed mode (dedicated and low priority nodes)" caption="You must configure a VNET to use AZTK in mixed mode (dedicated and low priority nodes)" %}
 
 ## What do I need a mixed mode cluster for
 
@@ -44,7 +44,7 @@ That's the reason, why you might want to add dedicated VMs to your cluster too.
 
 If you have a mixed-mode Spark cluster with both types of VMs, the master node will always to assigned to a dedicated VM.
 
-{% include image_caption.html imageurl="/images/posts/AztkMixedMode02.png" title="AZTK Spark Cluster running in mixed mode" caption="AZTK Spark Cluster running in mixed mode" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkMixedMode02.png" title="AZTK Spark Cluster running in mixed mode" caption="AZTK Spark Cluster running in mixed mode" %}
 
 ## Creating an Azure Virtual Network
 
@@ -52,7 +52,7 @@ So the first thing I did was to create an Azure Virtual Network ([How to create 
 
 After that, I opened the **Properties** section of the newly created VNET and copied the Resource ID to my clipboard.
 
-{% include image_caption.html imageurl="/images/posts/AztkMixedMode03.png" title="Azure Virtual Network - Properties" caption="Azure Virtual Network - Properties" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkMixedMode03.png" title="Azure Virtual Network - Properties" caption="Azure Virtual Network - Properties" %}
 
 ## Update cluster.yaml file
 
@@ -70,10 +70,10 @@ subnet_id: /subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/az
 
 {% endhighlight %}
 
-{% include image_caption.html imageurl="/images/posts/AztkMixedMode04.png" title=".aztk/cluster.yaml Subnet Settings" caption=".aztk/cluster.yaml Subnet Settings" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkMixedMode04.png" title=".aztk/cluster.yaml Subnet Settings" caption=".aztk/cluster.yaml Subnet Settings" %}
 
 ## Create a cluster
 
 After saving the chances to the cluster.yaml file, I was able to create a mixed-mode cluster with the toolkit.
 
-{% include image_caption.html imageurl="/images/posts/AztkMixedMode05.png" title="AZTK - Creating a mixed-mode Spark cluster" caption="Creating a mixed-mode Spark cluster" %}
+{% include image_caption.html imageurl="https://datainsights.cloud/images/posts/AztkMixedMode05.png" title="AZTK - Creating a mixed-mode Spark cluster" caption="Creating a mixed-mode Spark cluster" %}
