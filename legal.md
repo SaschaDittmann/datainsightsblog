@@ -10,9 +10,12 @@ sitemap: false
 Information in accordance with § 5 TMG
 
 Sascha Dittmann<br />
-Schoene Aussicht 3<br />
-67822 Winterborn<br />
+c/o Grosch Postflex #1577<br />
+Emsdettener Str. 10<br />
+48268 Greven<br />
 Germany
+
+No parcels or packages - Acceptance will be refused!
 
 ## Contact Information
 
