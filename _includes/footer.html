@@ -37,6 +37,10 @@
             <a href="{{ site.linkedin_url }}" class="button button-icon button-fill-horz" target="_blank"
                 rel="noopener"><span class="screen-reader-text">LinkedIn</span>{% include icons/linkedin.html %}</a>
             {% endif %}
+            {% if site.mastodon_url %}
+            <a rel="me" href="{{ site.mastodon_url }}" class="button button-icon button-fill-horz" target="_blank"
+                rel="noopener"><span class="screen-reader-text">Mastodon</span>{% include icons/mastodon.html %}</a>
+            {% endif %}
             {% if site.weibo_url %}
             <a href="{{ site.weibo_url }}" class="button button-icon button-fill-horz" target="_blank"
                 rel="noopener"><span class="screen-reader-text">Weibo</span>{% include icons/weibo.html %}</a>
