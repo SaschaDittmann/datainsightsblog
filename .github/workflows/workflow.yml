@@ -15,14 +15,14 @@ jobs:
       - /github/workspace:/srv/jekyll
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Make Gemfile.lock Writeable
       run: chmod a+w Gemfile.lock
     - name: Build
       run: |
         jekyll build --future
     - name: Store Website
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: my-site
         path: _site/
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Get Website
-      uses: actions/download-artifact@v2
+      uses: actions/download-artifact@v3
       with:
         name: my-site
     - name: Azure Login
