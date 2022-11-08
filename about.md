@@ -5,12 +5,12 @@ description: Sascha blogs about Big Data, Data Science and the Cloud
 image: aboutPage.jpg
 ---
 
-**Sascha Dittmann** is working as a Cloud Solution Architect at Microsoft since 2015.
-In his role he ignites interest of technical audiences (from Developer to CTO level), develops applications and services on the Microsoft cloud platform, drives early adoption with selected customers and partners, and scales through technical community engagements.
+**Sascha Dittmann** is working as a Customer Engineer (Smart Analytics) at Google Cloud.
+In his role he ignites interest of technical audiences (from Developer to CTO level), develops applications and services on the Google cloud platform, drives early adoption with selected customers and partners, and scales through technical community engagements.
 
-His focus is on software development for Microsoft Azure, SQL Server, Big Data as well as Data Science.
+His focus is on software development for Advanced Analytics / Big Data, IoT as well as Data Science.
 
-Before he joined Microsoft, he was working for Ernst & Young as a Software Developer (13 years) and Solution Architect (3 years).
+Before he joined Google in 2021, he was working as a Cloud Solution Architect at Microsoft for 6 years, as well as for Ernst & Young as a Software Developer (13 years) and Solution Architect (3 years).
 
 During this time he founded the serveral community websites as well as the user groups .NET Stammtisch Rheinhessen and Xamarin User Group Frankfurt.
 

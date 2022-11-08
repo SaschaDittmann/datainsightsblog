@@ -45,7 +45,7 @@ google_analytics: "UA-16762357-7"
 
 # Author information - author info at the bottom of the post
 author_name: "Sascha Dittmann"
-author_bio: "Sascha Dittmann is working as a Cloud Solution Architect at Microsoft. In his role he supports developers to implement successful cloud solutions. His focus is on Microsoft Azure, SQL Server, Big Data as well as Data Science."
+author_bio: "Sascha Dittmann is working as a Customer Engineer (Smart Analytics) at Google. In his role he supports developers to implement successful cloud solutions. His focus is on Advanced Analytics / Big Data, IoT as well as Data Science."
 author_url:  "https://www.sascha-dittmann.de"
 author_location: "Winterborn, Germany"
 author_image: /images/saschadittmann.jpg
@@ -70,6 +70,7 @@ medium_url: "https://medium.com/@SaschaDittmann"
 instagram_url: "https://www.instagram.com/SaschaDittmann"
 pinterest_url: "https://www.pinterest.com/SaschaDittmann"
 linkedin_url: "https://www.linkedin.com/in/saschadittmann"
+mastodon_url: "https://fosstodon.org/@saschadittmann"
 weibo_url: 
 youtube_channelid: "UCbX8EdsCb-jFDfr05hzMjjw"
 
