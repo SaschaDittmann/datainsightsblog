@@ -1,7 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-
+--- # Only the main Sass file needs front matter (the dashes are enough) ---
 /**
  * Table of Contents
  * 0. Reset
@@ -21,19 +18,18 @@
  */
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import 
-    "variables",
-    "reset",
-    "general",
-    "structure",
-    "header-navigation",
-    "header",
-    "posts-pages",
-    "comments",
-    "pagination",
-    "post-navigation",
-    "footer",
-    "widgets",
-    "animations",
-    "syntax-highlighter"
+@import "variables",
+"reset",
+"general",
+"structure",
+"header-navigation",
+"header",
+"posts-pages",
+"comments",
+"pagination",
+"post-navigation",
+"footer",
+"widgets",
+"animations",
+"syntax-highlighter"
 ;
